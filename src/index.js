@@ -4,7 +4,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import fileupload from 'express-fileupload';
-// import routes from './routes';
+import routes from './routes';
 
 const app = express();
 
@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-// app.use('/', routes);
+app.use('/', routes);
 
 const PORT = process.env.PORT || 5000;
 
